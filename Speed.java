@@ -18,19 +18,24 @@ public class Speed {
             int timeX = Integer.parseInt(time);
             int speedX = distanceX/timeX;
             System.out.println(speedX +" km/h");}
+        else {
+            System.out.println("Enter at least 2 values (speed,time,distance) ");}
+
         if (distance.isEmpty() && !speed.isEmpty() && !time.isEmpty()){
             int timeY = Integer.parseInt(time);
             int speedY = Integer.parseInt(speed);
             int distanceY = speedY*timeY;
             System.out.println(distanceY +" km");}
+        else {
+            System.out.println("Enter at least 2 values (speed,time,distance) ");}
+
         if  (time.isEmpty() && !speed.isEmpty() && !distance.isEmpty()){
             int speedZ = Integer.parseInt(speed);
             int distanceZ = Integer.parseInt(distance);
             int timeZ = speedZ/distanceZ;
             System.out.println(timeZ + "h");}
-        else {
-            System.out.println("Enter at least 2 values (speed,time,distance) ");
-        }
+       else {
+            System.out.println("Enter at least 2 values (speed,time,distance) ");}
 
 
     }
